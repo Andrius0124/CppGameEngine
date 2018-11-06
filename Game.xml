@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<Game>
+  <!-- Create a window -->
+  <Window width="1768" height="992" title="Spaceship Football Demo"></Window>
+
+  <!-- A list of GameStates for the game -->
+  <GameStates firstState="main_menu">
+
+    <!-- Give the state a name and specify the path to the xml file which describes the state -->
+    <GameState name="main_menu" path="GameData/Scenes/MainMenu.xml"></GameState>
+    <GameState name="gameplay" path="GameData/Scenes/GamePlay.xml"></GameState>
+
+  </GameStates>
+</Game>

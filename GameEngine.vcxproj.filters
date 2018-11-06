@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\app_state_playing.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl_core_4_4.cpp">
+      <Filter>Source\Thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="include_external\TinyXML2\tinyxml2.cpp">
+      <Filter>Source\Thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AppStateLoader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base_app_state.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drawable.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FramerateManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Log.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\manager_app_state.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MidiManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Script.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sprite.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Text.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\keyboard.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\app_state_playing.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\application.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base_app_state.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppStateLoader.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drawable.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gl_core_4_4.hpp">
+      <Filter>Header\ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="include\picoPNG.h">
+      <Filter>Header\ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="include_external\TinyXML2\tinyxml2.h">
+      <Filter>Header\ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sprite.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Text.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Script.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResourceManager.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Renderer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MidiManager.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\manager_app_state.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Log.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FramerateManager.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json.hpp">
+      <Filter>Header\ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="include\keyboard.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScriptManager.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TileSheet.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Transform.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="GameData\Scenes\MainMenu.xml">
+      <Filter>Resource\Scenes</Filter>
+    </Xml>
+    <Xml Include="GameData\Game.xml">
+      <Filter>Resource\Scenes</Filter>
+    </Xml>
+    <Xml Include="GameData\Scenes\GamePlay.xml">
+      <Filter>Resource\Scenes</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameData\Scripts\Ball.lua">
+      <Filter>Resource\Scripts</Filter>
+    </None>
+    <None Include="GameData\Scripts\CameraMovement.lua">
+      <Filter>Resource\Scripts</Filter>
+    </None>
+    <None Include="GameData\Scripts\EasyMidiDemo.lua">
+      <Filter>Resource\Scripts</Filter>
+    </None>
+    <None Include="GameData\Scripts\LowLevelMidiDemo.lua">
+      <Filter>Resource\Scripts</Filter>
+    </None>
+    <None Include="GameData\Scripts\Music.lua">
+      <Filter>Resource\Scripts</Filter>
+    </None>
+    <None Include="GameData\Scripts\Player.lua">
+      <Filter>Resource\Scripts</Filter>
+    </None>
+    <None Include="GameData\Scripts\StartGame.lua">
+      <Filter>Resource\Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{ecaab355-f22f-4b57-8114-8597fa0840af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{f1e67969-58f8-4dc5-ae6e-9f07752a2728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{03be887a-9b17-4eed-9ca3-2ce3b9658841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\ThirdParty">
+      <UniqueIdentifier>{c8ddd04a-a322-4722-bcde-06dff0deeb86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Thirdparty">
+      <UniqueIdentifier>{2786d203-1d14-4d4c-a971-c809f03bc57d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Scenes">
+      <UniqueIdentifier>{28397687-e665-4bf7-8d4f-2da4f5bacffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Scripts">
+      <UniqueIdentifier>{fa6e5a11-54bf-466e-8a3f-5628d04cecec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

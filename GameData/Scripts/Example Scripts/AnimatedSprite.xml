@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<GameState>
+
+  <!-- A list of all the resources that will be needed for this game state, this means we can load a resource only once and reuse it multiple times -->
+  <Resources>
+    <!-- Load an image -->
+    <Image>
+      <Name>LoadPoint</Name>
+      <Path>data/sprites-cat-running.png</Path>
+    </Image>
+  </Resources>
+
+  <!-- A list of entities in this game state -->
+  <Entities>
+    
+    <Sprite name="Sprite" texture="LoadPoint" width ="100" height="100" animation="true" tiles.x="4" tiles.y="2" >
+      <Transform>
+        <Position x="1200" y="450" z="-10"></Position>
+        <Rotation x="0"    y="0"   z="0"></Rotation>
+        <Scale    x="1.0"  y="1.0" z="1.0" ></Scale>
+      </Transform>
+    </Sprite>
+
+  </Entities>
+  
+</GameState>

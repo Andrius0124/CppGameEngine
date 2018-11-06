@@ -1,0 +1,54 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<GameState>
+
+  <!-- A list of all the resources that will be needed for this game state, this means we can load a resource only once and reuse it multiple times -->
+  <Resources>
+    
+  </Resources>
+
+  <!-- A list of entities in this game state -->
+  <Entities>
+    <Text name="title_spaceship" String="Spaceship">
+      <Transform>
+        <Position x="100" y="200" z="0"></Position>
+        <Rotation x="0"  y="0"  z="0"></Rotation>
+        <Scale    x="1"  y="1"  z="1"></Scale>
+      </Transform>
+
+      <Color R="255" G="255" B="255"></Color>
+    </Text>
+    
+    <Text name="title_football" String="Football">
+      <Transform>
+        <Position x="100" y="400" z="0"></Position>
+        <Rotation x="0"  y="0"  z="0"></Rotation>
+        <Scale    x="1"  y="1"  z="1"></Scale>
+      </Transform>
+
+      <Color R="255" G="255" B="255"></Color>
+    </Text>
+    
+    <Text name="instructions" String="PRESS ANY KEY">
+      <Transform>
+        <Position x="180" y="900" z="0"></Position>
+        <Rotation x="0"  y="0"  z="0"></Rotation>
+        <Scale    x="1"  y="1"  z="1"></Scale>
+      </Transform>
+
+      <Color R="255" G="0" B="0"></Color>
+    </Text>
+
+    <Entity name="game_start_controller">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale    x="1" y="1" z="1"></Scale>
+      </Transform>
+
+      <Script src="GameData/Scripts/StartGame.lua"></Script>
+    </Entity>
+    
+  </Entities>
+  
+</GameState>

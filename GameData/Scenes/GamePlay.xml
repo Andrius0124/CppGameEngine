@@ -1,0 +1,260 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<GameState>
+
+  <!-- A list of all the resources that will be needed for this game state, this means we can load a resource only once and reuse it multiple times -->
+  <Resources>
+    <!-- Player -->
+    <Image>
+      <Name>player_image</Name>
+      <Path>GameData/Images/Player.png</Path>
+    </Image>
+    <Mesh>
+      <Name>player_mesh</Name>
+      <Path>GameData/Models/Player.obj</Path>
+    </Mesh>
+    
+    <!-- Crate -->
+    <Image>
+      <Name>ball_image</Name>
+      <Path>GameData/Images/Ball.png</Path>
+    </Image>
+    <Mesh>
+      <Name>ball_mesh</Name>
+      <Path>GameData/Models/Ball.obj</Path>
+    </Mesh>
+
+    <!-- Grass -->
+    <Image>
+      <Name>grass_image</Name>
+      <Path>GameData/Images/Grass.png</Path>
+    </Image>
+    <Mesh>
+      <Name>grass_mesh</Name>
+      <Path>GameData/Models/Grass.obj</Path>
+    </Mesh>
+
+    <!-- Tiles -->
+    <Image>
+      <Name>tiles_image</Name>
+      <Path>GameData/Images/Tiles.png</Path>
+    </Image>
+    <Mesh>
+      <Name>tiles_mesh</Name>
+      <Path>GameData/Models/Tiles.obj</Path>
+    </Mesh>
+
+    <!-- Brick walls -->
+    <Image>
+      <Name>brickwall_image</Name>
+      <Path>GameData/Images/Brickwall.png</Path>
+    </Image>
+    <Mesh>
+      <Name>brickwall_mesh</Name>
+      <Path>GameData/Models/Brickwall.obj</Path>
+    </Mesh>
+
+    <!-- Skybox -->
+    <Image>
+      <Name>skybox_image</Name>
+      <Path>GameData/Images/Skybox.png</Path>
+    </Image>
+    <Mesh>
+      <Name>skybox_mesh</Name>
+      <Path>GameData/Models/Skybox.obj</Path>
+    </Mesh>
+
+    <!-- Goal -->
+    <Mesh><Name>goalframe_mesh</Name><Path>GameData/Models/GoalFrame.obj</Path></Mesh>
+    <Mesh><Name>goalframe_back_mesh</Name><Path>GameData/Models/GoalFrameBack.obj</Path></Mesh>
+    <Mesh><Name>goal_netting_side_mesh</Name><Path>GameData/Models/GoalNettingSide.obj</Path></Mesh>
+    <Mesh><Name>goal_netting_mesh</Name><Path>GameData/Models/GoalNetting.obj</Path></Mesh>
+    <Image><Name>goal_netting_image</Name><Path>GameData/Images/Netting.png</Path></Image>
+  </Resources>
+
+  <!-- A list of entities in this game state -->
+  <Entities>
+
+    <!-- The player -->
+    <Entity name="player">
+      <Transform>
+        <Position x="0" y="0" z="15"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale    x="0.7" y="0.7" z="0.7"></Scale>
+      </Transform>
+      <Model mesh="player_mesh" texture="player_image"></Model>
+      <Script src="GameData/Scripts/Player.lua"></Script>
+    </Entity>
+
+    <!-- The pitch -->
+    <Entity name="grass">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale    x="3" y="3" z="3"></Scale>
+      </Transform>
+      <Model mesh="grass_mesh" texture="grass_image"></Model>
+    </Entity>
+
+    <!-- The tiles -->
+    <Entity name="tiles">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale    x="3" y="3" z="3"></Scale>
+      </Transform>
+      <Model mesh="tiles_mesh" texture="tiles_image"></Model>
+    </Entity>
+
+    <!-- The walls -->
+    <Entity name="brickwall">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale    x="3" y="3" z="3"></Scale>
+      </Transform>
+      <Model mesh="brickwall_mesh" texture="brickwall_image"></Model>
+    </Entity>
+
+    <!-- The skybox -->
+    <Entity name="skybox">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale    x="10000" y="10000" z="10000" ></Scale>
+      </Transform>
+      <Model mesh="skybox_mesh" texture="skybox_image"></Model>
+    </Entity>
+
+    <!-- Goal 1 -->
+    <Entity name="goalframe_1">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="3" y="3" z="3" ></Scale>
+      </Transform>
+      <Model mesh="goalframe_mesh"></Model>
+    </Entity>
+    <Entity name="goalframe_back_1">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="3" y="3" z="3" ></Scale>
+      </Transform>
+      <Model mesh="goalframe_back_mesh"></Model>
+    </Entity>
+    <Entity name="goal_netting_1">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="3" y="3" z="3" ></Scale>
+      </Transform>
+      <Model mesh="goal_netting_mesh" texture="goal_netting_image"></Model>
+    </Entity>
+    <Entity name="goal_netting_leftside_1">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="-3" y="3" z="3"></Scale>
+      </Transform>
+      <Model mesh="goal_netting_side_mesh" texture="goal_netting_image"></Model>
+    </Entity>
+    <Entity name="goal_netting_rightside_1">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="3" y="3" z="3" ></Scale>
+      </Transform>
+      <Model mesh="goal_netting_side_mesh" texture="goal_netting_image"></Model>
+    </Entity>
+
+    <!-- Goal 2 -->
+    <Entity name="goalframe_2">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="3" y="3" z="-3" ></Scale>
+      </Transform>
+      <Model mesh="goalframe_mesh"></Model>
+    </Entity>
+    <Entity name="goalframe_back_2">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="3" y="3" z="-3" ></Scale>
+      </Transform>
+      <Model mesh="goalframe_back_mesh"></Model>
+    </Entity>
+    <Entity name="goal_netting_2">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="3" y="3" z="-3" ></Scale>
+      </Transform>
+      <Model mesh="goal_netting_mesh" texture="goal_netting_image"></Model>
+    </Entity>
+    <Entity name="goal_netting_leftside_2">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="-3" y="3" z="-3"></Scale>
+      </Transform>
+      <Model mesh="goal_netting_side_mesh" texture="goal_netting_image"></Model>
+    </Entity>
+    <Entity name="goal_netting_rightside_2">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale x="3" y="3" z="-3" ></Scale>
+      </Transform>
+      <Model mesh="goal_netting_side_mesh" texture="goal_netting_image"></Model>
+    </Entity>
+
+    <Entity name="ball">
+      <Transform>
+        <Position x="0"   y="6"   z="0"></Position>
+        <Rotation x="40"  y="0"   z="40"></Rotation>
+        <Scale    x="0.1" y="0.1" z="0.1" ></Scale>
+      </Transform>
+
+      <Model mesh="ball_mesh" texture="ball_image"></Model>
+
+      <Script src="GameData/Scripts/Ball.lua"></Script>
+    </Entity>
+
+    <Entity name="camera">
+      <Transform>
+        <Position x="0" y="5"   z="0"></Position>
+        <Rotation x="0" y="180" z="0"></Rotation>
+        <Scale    x="1" y="1"   z="1"></Scale>
+      </Transform>
+
+      <!-- Make the camera adopt the transform of this entity -->
+      <Camera></Camera>
+
+      <Script src="GameData/Scripts/CameraMovement.lua"></Script>
+    </Entity>
+	
+	<Text name="score" String="Hits: 0">
+      <Transform>
+        <Position x="40" y="80" z="0"></Position>
+        <Rotation x="0"  y="0"  z="0"></Rotation>
+        <Scale    x="0.25"  y="0.25"  z="0.25"></Scale>
+      </Transform>
+
+      <Color R="255" G="255" B="255"></Color>
+    </Text>
+	
+	<Entity name="logic_controller">
+      <Transform>
+        <Position x="0" y="0" z="0"></Position>
+        <Rotation x="0" y="0" z="0"></Rotation>
+        <Scale    x="1" y="1" z="1"></Scale>
+      </Transform>
+
+      <Script src="GameData/Scripts/Logic.lua"></Script>
+    </Entity>
+    
+  </Entities>
+  
+</GameState>
